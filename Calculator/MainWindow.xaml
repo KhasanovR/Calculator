@@ -1,0 +1,45 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Calculator.MainWindow"
+        Title="MainWindow" WindowState="Maximized" Width="1000" Height="800" WindowStyle="None" WindowStartupLocation="CenterScreen" Background="#1d1d1d" ResizeMode="NoResize" d:DesignWidth="925">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBox x:Name="tbxResult" Height="180" Width="815" Margin="0,0,0,35" FontSize="80" Padding="0,0,30,0" Background="#2e2e2e" Foreground="#ffffff" Text="0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom"/>
+            <WrapPanel>
+                <Button Content="M" Margin="5,5,30,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Button Content="CE" Margin="5,5,5,5" Height="75" Width="150"  Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Button x:Name="btnClear" Content="C" Margin="5,5,5,5" Height="75" Width="150"  Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnClear_Click"/>
+                <Button x:Name="btnBack"  Margin="5,5,5,5" Height="75" Width="150"  Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnBack_Click"/>
+                <Button x:Name="btnDiv" Content="/" Margin="5,5,5,5" Height="75" Width="150"  Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnDiv_Click"/>
+            </WrapPanel>
+            <WrapPanel>
+                <Button x:Name="btnNeg" Content="+/-" Margin="5,5,30,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnNeg_Click"/>
+                <Button x:Name="btn7" Content="7" Margin="5,5,5,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btn7_Click"/>
+                <Button x:Name="btn8" Content="8" Margin="5,5,5,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btn8_Click"/>
+                <Button x:Name="btn9" Content="9" Margin="5,5,5,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btn9_Click"/>
+                <Button x:Name="btnMul" Content="x" Margin="5,5,5,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnMul_Click"/>
+            </WrapPanel>
+            <WrapPanel>
+                <Button x:Name="btnSqrt" Content='sqrt' Margin="5,5,30,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnSqrt_Click"/>
+                <Button x:Name="btn4" Content="4" Margin="5,5,5,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btn4_Click"/>
+                <Button x:Name="btn5" Content="5" Margin="5,5,5,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btn5_Click"/>
+                <Button x:Name="btn6" Content="6" Margin="5,5,5,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btn6_Click"/>
+                <Button x:Name="btnSub" Content="-" Margin="5,5,5,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnSub_Click"/>
+            </WrapPanel>
+            <WrapPanel>
+                <Button x:Name="btnPer" Content="%" Margin="5,5,30,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnPer_Click"/>
+                <Button x:Name="btn1" Content="1" Margin="5,5,5,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btn1_Click"/>
+                <Button x:Name="btn2" Content="2" Margin="5,5,5,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btn2_Click"/>
+                <Button x:Name="btn3" Content="3" Margin="5,5,5,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btn3_Click"/>
+                <Button x:Name="btnAdd" Content="+" Margin="5,5,5,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnAdd_Click"/>
+            </WrapPanel>
+            <WrapPanel>
+                <Button x:Name="btnRec" Content="1/x" Margin="5,5,30,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnRec_Click"/>
+                <Button x:Name="btn0" Content="0" Margin="5,5,5,5" Height="75" Width="310" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btn0_Click"/>
+                <Button x:Name="btnDot" Content="." Margin="5,5,5,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnDot_Click"/>
+                <Button x:Name="btnEqual" Content="=" Margin="5,5,5,5" Height="75" Width="150" Foreground="#f7f7f7" Background="#3f3f3f" FontSize="45" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btnEqual_Click"/>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>
